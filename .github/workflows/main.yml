@@ -28,5 +28,5 @@ jobs:
           push: true
           tags:
             flsanchesjr/rotten-potatoes:latest
-            flsanchesjr/rotten-potatoes:${{github.tun_number}}
+            flsanchesjr/rotten-potatoes:${{github.run_number}}
             
