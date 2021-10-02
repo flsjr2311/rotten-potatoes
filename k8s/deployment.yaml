@@ -43,19 +43,19 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: web
+  name: film
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: web
+      app: film
   template:
     metadata:
       labels:
-        app: web
+        app: film
     spec:
       containers:
-      - name: web
+      - name: film
         image: flsanchesjr/rotten-potatoes:v1
         resources:
           limits:
@@ -79,10 +79,10 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: web
+  name: film
 spec:
   selector:
-    app: web
+    app: film
   ports:
     - port: 80
       targetPort: 5050
