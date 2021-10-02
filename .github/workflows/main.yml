@@ -33,7 +33,7 @@ jobs:
   CD:
     runs-on: ubuntu-latest
     
-    Steps:
+    steps:
       - uses: actions/checkout@v2
       
       - name: Kubernetes set context
