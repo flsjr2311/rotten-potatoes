@@ -27,6 +27,6 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            flsanchesjr/rotten-potatoes:latest
+            flsanchesjr/rotten-potatoes:v1
             flsanchesjr/rotten-potatoes:${{github.run_number}}
             
